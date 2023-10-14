@@ -1,3 +1,7 @@
+pdfs/
+*.mp3
+*.toml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
