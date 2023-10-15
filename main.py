@@ -104,13 +104,14 @@ if __name__ == "__main__":
             for m in mp3s:
                 files.append(AudioSegment.from_mp3(m))
 
+            print("todo combinging doesn't quite work yet")
             combined = files[0]
             for f in files[1:]:
                 combined += f
             combined.export(f"{output_file_name}.mp3", format="mp3")
 
             # cleanup
-            shutil.rmtree("audio", ignore_errors=True)
+            # shutil.rmtree("audio", ignore_errors=True)
 
         # long text gen
         # with open("gcp.toml", "rb") as f:
